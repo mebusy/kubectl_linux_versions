@@ -21,3 +21,8 @@ Use config file in host machine
 $ docker run --rm -it -v <Your K8s Config File>:/k8sconfig  docker_kubectl kubectl_1.9.11 --kubeconfig k8sconfig get namespace
 ```
 
+Run Pre-build Image
+
+```bash
+$ docker run --rm -it -v <Your K8s Config File>:/k8sconfig  mebusy/kubectl_versions  kubectl_1.9.11 --kubeconfig k8sconfig get namespace
+```
